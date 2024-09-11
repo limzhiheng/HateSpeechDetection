@@ -227,7 +227,7 @@ def predict_and_display(unprocessed_sentences,sentences):
     score_results_with_polarity = linear_r_with_polarity_loaded.predict(transformed_sentences_with_polarity)
     text_type_with_polarity = []
     for x in score_results_with_polarity:
-        if x > 1 :
+        if x > 0.5 :
             text_type_with_polarity.append("hate speech")
         elif x >= -1 :
             text_type_with_polarity.append("neutral speech or ambiguous speech")
