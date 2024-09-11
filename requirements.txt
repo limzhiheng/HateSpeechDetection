@@ -1,0 +1,11 @@
+streamlit
+scikit-learn
+pandas
+joblib
+numpy
+matplotlib
+openpyxl
+nltk==3.8.1
+scipy
+contractions
+textblob
